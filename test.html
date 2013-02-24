@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="wReader" ng-csp>
+<head>
+  <meta charset="utf-8">
+
+  <title>wReader</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/test.css">
+   <script src="js/libs/jquery-1.7.1.min.js"></script>
+  
+  <script type="text/javascript">
+            $(function() {
+                $('#navigation a').stop().animate({'marginLeft':'-85px'},1000);
+
+                $('#navigation > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-85px'},200);
+                    }
+                );
+            });
+        </script>
+</head>
+<body>
+  <ul id="navigation">
+
+            <li class="rssfeed"><a href="" title="Rss Feed"></a></li>
+       
+            <li class="contact"><a href="" title="Contact"></a></li>
+
+        </ul>
+
+	
+
+ 
+  <script src="js/libs/angular-1.0.1.min.js"></script>
+  <script src="js/libs/moment-1.4.0.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/directives.js"></script>
+
+</body>
+</html>

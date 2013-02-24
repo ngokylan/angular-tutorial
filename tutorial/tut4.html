@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app ng-controller="PhoneListCtrl">
+<head>
+  <meta charset="utf-8">
+
+  <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/test.css">
+   <script src="../js/libs/jquery-1.7.1.min.js"></script>
+  <script src="../js/libs/angular-1.0.1.min.js"></script>
+  <script src="../js/libs/moment-1.4.0.min.js"></script>
+  
+ <script src="custom_js/tut2.js"></script>
+</head>
+<body>
+  
+ 
+ 
+ <div class="container-fluid">
+ 	<div class="row-fluid">
+ 		
+ 	<div class="row-fluid">
+ 		Search: <input ng-model='query' />
+ 		Sort by:
+ 		<select ng-model='orderProp'>
+ 			<option value="name">Alphabetical</option>
+ 			<option value="age">Newest</option>
+ 		</select>
+ 		
+ 		<ul class="phones">
+ 			<li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+ 				{{phone.name}}
+ 				<p>{{phone.snippet}}</p>
+ 		</ul>
+ 	</div>
+ 	
+ </div>
+ 
+ 
+  
+  <script src="../js/app.js"></script>
+  
+  <script src="../js/filters.js"></script>
+  <script src="../js/services.js"></script>
+  <script src="../js/directives.js"></script>
+
+</body>
+</html>

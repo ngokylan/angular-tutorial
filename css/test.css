@@ -1,0 +1,58 @@
+/*----------------------------------------------------
+{--------}  Menu {--------}
+----------------------------------------------------*/
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 200px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+ul#navigation li {
+    width: 100px;
+}
+ul#navigation li a {
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;    
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 0.8;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+ul#navigation .home a{
+    background-image: url(http://img163.imageshack.us/img163/1473/homehc.png);
+}
+ul#navigation .about a      {
+    background-image: url(http://img156.imageshack.us/img156/4176/idcardqx.png);
+}
+ul#navigation .search a      {
+    background-image: url(http://img21.imageshack.us/img21/7365/searchl.png);
+}
+ul#navigation .podcasts a      {
+    background-image: url(http://img834.imageshack.us/img834/8079/camerae.png);
+}
+ul#navigation .rssfeed a   {
+    background-image: url(http://img263.imageshack.us/img263/5871/rssd.png);
+}
+ul#navigation .photos a     {
+    background-image: url(http://img508.imageshack.us/img508/2226/ipodl.png);
+}
+ul#navigation .contact a    {
+    background-image: url(http://img808.imageshack.us/img808/5498/mailos.png);
+}
+
+ 
